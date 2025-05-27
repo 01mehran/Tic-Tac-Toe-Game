@@ -1,12 +1,21 @@
-# React + Vite
+# Tic-Tac-Toe Game 🎮
+- A responsive React implementation of the classic Tic-Tac-Toe game with turn indicator, winner announcement, and restart functionality.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+![Game screenshot](./src/assets/gameScreenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features ✨
+- 🕹️ Interactive game board with React state management
+- 🔄 Turn indicator showing whose turn it is (X or O)
+- 🏆 Automatic winner detection with announcement
+- 🔄 Restart button to reset the game at any time
+- 📱 Fully responsive design (works on mobile & desktop)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used 💻
+1. HTML5
+2. CSS3 (Flexbox/Grid for responsive design)
+3. React.js (with Hooks)
+
+## Live Demo 🔥
+[Play Now](https://tic-tac-toe-game-theta-three.vercel.app/)
