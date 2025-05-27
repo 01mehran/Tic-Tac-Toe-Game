@@ -9,7 +9,7 @@ import { Board } from "../board/Board";
 
 export default function TicTacToe() {
   const [squares, setSquares] = useState(Array(9).fill(null));
-  const [isXNext, setIsXNext] = useState(true);
+  const [isXTurn, setIsXNext] = useState(true);
   const [winner, setWinner] = useState(null);
 
   // Showing Winner Icon;
@@ -46,14 +46,14 @@ export default function TicTacToe() {
 
     const newSquares = [...squares];
 
-    newSquares[i] = isXNext ? cross__icon : circle__icon;
+    newSquares[i] = isXTurn ? cross__icon : circle__icon;
     setSquares(newSquares);
 
     const newWinner = winnerIcon(newSquares);
     if (newWinner) {
       setWinner(newWinner);
     } else {
-      setIsXNext(!isXNext);
+      setIsXNext(!isXTurn);
     }
   };
 
@@ -68,7 +68,7 @@ export default function TicTacToe() {
     <div className={styles.container}>
       <main>
         {/* ____Header */}
-        <Header isXNext={isXNext}/>
+        <Header isXTurn={isXTurn}/>
 
         {/*_____ Borad */}
         <Board squares={squares} squersHandler={squersHandler} />
