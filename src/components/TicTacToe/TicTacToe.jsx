@@ -9,7 +9,7 @@ import { Board } from "../board/Board";
 
 export default function TicTacToe() {
   const [squares, setSquares] = useState(Array(9).fill(null));
-  const [isXTurn, setIsXNext] = useState(true);
+  const [isXTurn, setIsXTurn] = useState(true);
   const [winner, setWinner] = useState(null);
 
   // Showing Winner Icon;
@@ -26,7 +26,7 @@ export default function TicTacToe() {
       [0, 4, 8],
       [2, 4, 6],
     ];
-
+    
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
       if (
@@ -53,14 +53,14 @@ export default function TicTacToe() {
     if (newWinner) {
       setWinner(newWinner);
     } else {
-      setIsXNext(!isXTurn);
+      setIsXTurn(!isXTurn);
     }
   };
 
   // Start New game;
   const startNewGame = () => {
     setSquares(Array(9).fill(null));
-    setIsXNext(true);
+    setIsXTurn(true);
     setWinner(null);
   };
 
