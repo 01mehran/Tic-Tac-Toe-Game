@@ -1,11 +1,11 @@
 import { useState } from "react";
 import styles from "./TicTacToe.module.css";
-import cross__icon from "../../assets/images/cross__icon.png";
-import circle__icon from "../../assets/images/circle__icon.png";
-import Header from "../header/Header";
-import { ResetButton } from "../button/ResetButton";
-import Message from "../mesaage/Message";
-import { Board } from "../board/Board";
+import cross__icon from "@images/cross__icon.png";
+import circle__icon from "@images/circle__icon.png";
+import Header from "@components/header/Header";
+import { ResetButton } from "@components/button/ResetButton";
+import Message from "@components/mesaage/Message";
+import { Board } from "@components/board/Board";
 
 export default function TicTacToe() {
   const [squares, setSquares] = useState(Array(9).fill(null));
@@ -26,7 +26,7 @@ export default function TicTacToe() {
       [0, 4, 8],
       [2, 4, 6],
     ];
-    
+
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
       if (
@@ -68,7 +68,7 @@ export default function TicTacToe() {
     <div className={styles.container}>
       <main>
         {/* ____Header */}
-        <Header isXTurn={isXTurn}/>
+        <Header isXTurn={isXTurn} />
 
         {/*_____ Borad */}
         <Board squares={squares} squersHandler={squersHandler} />

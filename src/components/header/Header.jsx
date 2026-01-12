@@ -1,6 +1,6 @@
 import styles from "./Header.module.css";
-import player__1 from "../../assets/images/Player 1.png";
-import player__2 from "../../assets/images/Player 2.png";
+import player__1 from "@images/Player 1.png";
+import player__2 from "@images/Player 2.png";
 
 const Header = ({ isXTurn }) => {
   return (
