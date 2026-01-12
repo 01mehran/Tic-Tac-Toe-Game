@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./TicTacToe.module.css";
-import cross__icon from "../../assets/cross__icon.png";
-import circle__icon from "../../assets/circle__icon.png";
+import cross__icon from "../../assets/images/cross__icon.png";
+import circle__icon from "../../assets/images/circle__icon.png";
 import Header from "../header/Header";
 import { ResetButton } from "../button/ResetButton";
 import Message from "../mesaage/Message";

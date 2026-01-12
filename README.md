@@ -2,7 +2,7 @@
 - A responsive React implementation of the classic Tic-Tac-Toe game with turn indicator, winner announcement, and restart functionality.
 
 
-![Game screenshot](./src/assets/gameScreenshot.png)
+![Game screenshot](./src/assets/images/gameScreenshot.png)
 
 ## Features ✨
 - 🕹️ Interactive game board with React state management
