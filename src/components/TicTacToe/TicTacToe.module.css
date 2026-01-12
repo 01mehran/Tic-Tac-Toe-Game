@@ -1,14 +1,3 @@
-:root {
-  --blue: #3d7ad6e3;
-  --black: #000000;
-  --white: #f4f4f4;
-  --yellow: #fcd015;
-}
-
-body {
-  background-image: url("../../assets/images/Cover.png");
-  font-family: cursive;
-}
 .container {
   height: 100vh;
   display: flex;
@@ -36,9 +25,9 @@ footer {
   align-items: center;
   gap: 1.3rem;
 }
+
 @media screen and (width < 450px) {
   .container {
     margin: auto 1rem;
   }
- 
 }

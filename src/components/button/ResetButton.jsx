@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 let Button = styled.button`
@@ -45,11 +44,8 @@ let NewSpan = styled.span`
 
 export const ResetButton = ({ startNewGame }) => {
   return (
-    <>
-      <Button onClick={startNewGame}>
-        <NewSpan>New game</NewSpan>
-      </Button>
-    </>
+    <Button onClick={startNewGame}>
+      <NewSpan>New game</NewSpan>
+    </Button>
   );
 };
-

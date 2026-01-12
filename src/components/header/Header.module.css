@@ -17,10 +17,9 @@ header img {
 .active {
   background-color: var(--blue);
   height: 5px;
-  border-radius: 3px;
+  border-radius: 2px;
   transition: all 0.3s ease-in-out;
   position: relative;
-  border: 1px dashed var(--yellow) ;
 }
 .active::before {
   content: "";
@@ -31,4 +30,5 @@ header img {
   left: 50%;
   top: -3px;
   transform: translateX(-50%) rotate(45deg);
+  transition: all 0.3s ease-in-out;
 }

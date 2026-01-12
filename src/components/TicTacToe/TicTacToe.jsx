@@ -1,7 +1,14 @@
+// Hooks;
 import { useState } from "react";
+
+// CSS;
 import styles from "./TicTacToe.module.css";
+
+// Images;
 import cross__icon from "@images/cross__icon.png";
 import circle__icon from "@images/circle__icon.png";
+
+// Components;
 import Header from "@components/header/Header";
 import { ResetButton } from "@components/button/ResetButton";
 import Message from "@components/mesaage/Message";
